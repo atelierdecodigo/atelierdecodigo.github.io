@@ -4,3 +4,7 @@ plugins:
 
 title: Atelier de Código
 description: Un lugar para aprender a programar de forma artesanal
+copyright: '@ {year} Noelia Stetie y Macarena Quiroga'
+
+defaultContentLanguage: es
+
