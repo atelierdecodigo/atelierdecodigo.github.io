@@ -3,6 +3,9 @@ layout: default
 title: "Atelier de código"
 ---
 
+[Home](/) | [Sobre nosotras](/sobre-nosotras/) | [Contacto](/contacto/)
+
+
 # Atelier de código
 
 Un espacio para aprender a programar de forma artesanal.
