@@ -60,26 +60,26 @@ Desde **Atelier de código** queremos acompañarte en tu camino en el análisis 
 <div class="squares-container">
   <div class="square" onclick="toggleDescription(this)">
     <div class="front">
-      <h3>Título 1</h3>
+      <h3>Cursos</h3>
     </div>
     <div class="back">
-      <p>Esta es la descripción del primer cuadrado.</p>
+      <p>(descripción de los cursos)</p>
     </div>
   </div>
   <div class="square" onclick="toggleDescription(this)">
     <div class="front">
-      <h3>Título 2</h3>
+      <h3>Asesorías</h3>
     </div>
     <div class="back">
-      <p>Esta es la descripción del segundo cuadrado.</p>
+      <p>(descripción de las asesorías)</p>
     </div>
   </div>
   <div class="square" onclick="toggleDescription(this)">
     <div class="front">
-      <h3>Título 3</h3>
+      <h3>Análisis de datos</h3>
     </div>
     <div class="back">
-      <p>Esta es la descripción del tercer cuadrado.</p>
+      <p>(descripción del análisis de datos)</p>
     </div>
   </div>
 </div>
