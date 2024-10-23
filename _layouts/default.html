@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="{{ site.lang | default: "en-US" }}"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">{% seo %}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!--[if lt IE 9]&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;![endif]--&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>{% include head-custom.html %}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="wrapper"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;&lt;a href="{{ "/" | absolute_url }}"&gt;{{ site.title | default: site.github.repository_name }}&lt;/a&gt;&lt;/h1&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>{% if site.logo %}</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="{{site.logo | relative_url}}" alt="Logo" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>{% endif %}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;{{ site.description | default: site.github.project_tagline }}&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>{% if site.github.is_project_page %}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="view"&gt;&lt;a href="{{ site.github.repository_url }}"&gt;View the Project on GitHub &lt;small&gt;{{ site.github.repository_nwo }}&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>{% endif %}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>{% if site.github.is_user_page %}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="view"&gt;&lt;a href="https://github.com/tu-usuario" target="_blank"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Logo" style="width: 24px; height: 24px;"/&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p3"><span class="s1">&lt;a href="https://x.com/atelierdecodigo" target="_blank"&gt; &lt;img src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_bird.svg/1200px-Twitter_bird.svg.png" alt="Twitter Logo" style="width: 24px; height: 24px;"/&gt; &lt;/a&gt;</span></p>
+<p class="p1">&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>{% endif %}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>{% if site.show_downloads %}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul class="downloads"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;a href="{{ site.github.zip_url }}"&gt;Download &lt;strong&gt;ZIP File&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;a href="{{ site.github.tar_url }}"&gt;Download &lt;strong&gt;TAR Ball&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;a href="{{ site.github.repository_url }}"&gt;View On &lt;strong&gt;GitHub&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>{% endif %}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>{{ content }}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>{% if site.github.is_project_page %}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;This project is maintained by &lt;a href="{{ site.github.owner_url }}"&gt;{{ site.github.owner_name }}&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>{% endif %}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;&lt;small&gt;Hosted on GitHub Pages &amp;mdash; Theme by &lt;a href="https://github.com/orderedlist"&gt;orderedlist&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="{{ "/assets/js/scale.fix.js" | relative_url }}"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
