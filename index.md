@@ -11,59 +11,81 @@ Desde **Atelier de código** queremos acompañarte en tu camino en el análisis 
 <style>
   .squares-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 20px;
   }
 
   .square {
+    position: relative;
     width: 30%;
+    height: 200px; /* Ajusta la altura que desees */
+    perspective: 1000px; /* Para efecto de 3D */
+    margin: 10px; /* Espacio entre cuadrados */
+    cursor: pointer;
+  }
+
+  .square .front,
+  .square .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Ocultar el lado opuesto */
     border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    transition: transform 0.6s; /* Transición suave */
   }
 
-  .square:hover {
-    background-color: #f0f0f0;
+  .square .front {
+    background-color: white; /* Color de fondo del lado frontal */
   }
 
-  .description {
-    margin-top: 10px;
-    text-align: left;
+  .square .back {
+    background-color: #f0f0f0; /* Color de fondo del lado trasero */
+    transform: rotateY(180deg); /* Darle la vuelta */
+  }
+
+  .square.flipped .front {
+    transform: rotateY(180deg); /* Dar vuelta al lado frontal */
+  }
+
+  .square.flipped .back {
+    transform: rotateY(0deg); /* Mostrar el lado trasero */
   }
 </style>
 
 <div class="squares-container">
-  <div class="square" onclick="toggleDescription('desc1')">
-    <h3>Cursos</h3>
-    <div id="desc1" class="description" style="display:none;">
-      (descripción de cursos)
+  <div class="square" onclick="toggleDescription(this)">
+    <div class="front">
+      <h3>Título 1</h3>
+    </div>
+    <div class="back">
+      <p>Esta es la descripción del primer cuadrado.</p>
     </div>
   </div>
-  <div class="square" onclick="toggleDescription('desc2')">
-    <h3>Tutorías</h3>
-    <div id="desc2" class="description" style="display:none;">
-      (descripción de tutorías)
+  <div class="square" onclick="toggleDescription(this)">
+    <div class="front">
+      <h3>Título 2</h3>
+    </div>
+    <div class="back">
+      <p>Esta es la descripción del segundo cuadrado.</p>
     </div>
   </div>
-  <div class="square" onclick="toggleDescription('desc3')">
-    <h3>Análisis de datos</h3>
-    <div id="desc3" class="description" style="display:none;">
-      (descripción de análisis de datos)
+  <div class="square" onclick="toggleDescription(this)">
+    <div class="front">
+      <h3>Título 3</h3>
+    </div>
+    <div class="back">
+      <p>Esta es la descripción del tercer cuadrado.</p>
     </div>
   </div>
 </div>
 
 <script>
-  function toggleDescription(descId) {
-    var desc = document.getElementById(descId);
-    if (desc.style.display === "none") {
-      desc.style.display = "block";
-    } else {
-      desc.style.display = "none";
-    }
+  function toggleDescription(square) {
+    square.classList.toggle('flipped'); // Alternar la clase flipped
   }
 </script>
-
