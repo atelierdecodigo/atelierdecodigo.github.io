@@ -30,7 +30,7 @@ Desde **Atelier de código** queremos acompañarte en tu camino en el análisis 
     width: 100%;
     height: 100%;
     backface-visibility: hidden; /* Ocultar el lado opuesto */
-    border: 1px solid #ccc;
+    border: 1px solid #267CB9;
     border-radius: 8px;
     display: flex;
     align-items: center;
